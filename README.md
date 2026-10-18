@@ -89,3 +89,9 @@ No dependencies are required
 No build process is required
 
 No package.json is needed
+
+## Deployment
+
+This application is containerised with Docker, stored in Amazon ECR and deployed to Amazon EKS.
+It is built and deployed automatically with AWS CodeBuild and CodePipeline.
+The application is exposed on port 3000 through a Kubernetes LoadBalancer service.
